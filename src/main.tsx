@@ -21,7 +21,9 @@ const router = createBrowserRouter([
     path: "/list/:id",
     element: <List />,
   }
-]);
+], {
+  basename: import.meta.env.BASE_URL,
+});
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <ChakraProvider>
